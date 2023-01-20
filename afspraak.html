@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tandartsafspraak.</title>
+</head>
+<body>
+<h1>Tandarstpraktijk KiesKeurig</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus, enim sit amet dictum sollicitudin, tellus lectus porta velit, at eleifend sem nibh at massa. Vivamus ut ipsum feugiat, pretium risus sit amet, pellentesque ante. Vivamus bibendum ligula at erat tempus luctus. Donec id interdum nisl, vitae vehicula ante. Nunc at lacus nec nisl blandit lacinia. Quisque convallis varius sagittis. Integer lacus metus, auctor eu venenatis eu, varius pretium ex. Donec a egestas turpis. Sed rutrum aliquam velit. Aliquam iaculis diam eu ante mattis hendrerit. In et mi a neque fermentum luctus at nec magna. Aenean massa neque, feugiat in auctor eget, fermentum eget orci. Integer nisl lacus, sollicitudin at malesuada at, viverra id nulla.</p>
+<img src="https://www.vlaamse-ouderenraad.be/system/files/styles/wide_image/private/images/article/teeth-1670434_960_720.png?itok=tW9iHWdN" alt="Lachende cartoon tand" width="300" > 
+<img src="https://www.tandartsenpraktijkcarmenlaan.nl/wp-content/uploads/2020/09/dentist.jpg" alt="Lachend meisje" width="300">
+<img src="https://www.denieuwepraktijk.nl/wp-content/uploads/2020/10/tandartspraktijk-gemertschoolstraat-3-5421kt-gemert-noord-brabant-840x560.png" alt="Prothese tand" width="300">
+<hr> 
+<br><br> 
+<form id="afspraakform" action="https://formspree.io/f/xyyaznql" method="post">
+    <fieldset>
+    <legend>Persoonlijke gegevens</legend><br>
+    <label for="naam">Naam:</label>
+    <input id="naam" type="text" name="naam"><br><br>
+    <input type="radio" name="geslacht" value="man" checked>Man
+    <input type="radio" name="geslacht" value="vrouw">Vrouw
+    <input type="radio" name="geslacht" value="anders">Anders <br><br>
+    <label for="adres">Adres:</label>
+    <input type="text" id="adres" name="adres" placeholder="straatnaam en huisnummer"><br><br>
+    <label for="postcode">Postcode:</label>
+    <input type="text" id="postcode" name="postcode" placeholder="1236AB"><br><br>
+    <label for=" woonplaats">Woonplaats:</label>
+    <input type="text" id="woonplaats" name="woonplaats"><br><br>
+    <label for="e-mail adres">E-mailadres:</label>
+    <input type="e-mail" id="email adres" name="email adres"> <br><br>
+    <label for="Telefoonnummer">Telefoonnummer:</label>
+    <input type="tel" id="telnummer" name="telnummer"> <br><br>
+    <label for="ID Document">Selecteer een Identificatie Document</label>
+    <input type="file" id="iddocument" name="iddocument"><br><br>
+
+    </fieldset>
+    <fieldset>
+    <legend>Wat voor klachten heeft u?</legend><br>
+    <b> Selecteer het antwoord dat best bij u past.</b><br>
+    <input type="checkbox" name="onderwerpen" value="Zwelling">Zwelling
+    <input type="checkbox" name="onderwerpen" value="Pijn">Pijn of hoofdpijn
+    <input type="checkbox" name="onderwerpen" value="Bloeding">Bloeding
+    <input type="checkbox" name="onderwerpen" value="tand">Gebroken tand <br><br>
+    <b> Licht u klachten toe></b><br>
+    <textarea name="klachten" maxlength="1500"></textarea>
+    </fieldset>
+
+    <fieldset>
+    <legend>Over uw afspraak</legend>
+    <b>Welk specialist wilt u?</b>
+    <select name="specialist a">
+    <option value="geen">Dokter L. De Graaf</option>
+    <option value="specialist b" selected>Dokter C. Ravenstein</option>
+    <option value="specialist c">Dokter J. M. Van der boom</option>
+    <option value="specialist d">Dokter E. Petersson </option>
+    </select><br><br>
+    <b> Selecteer uw gewenste datum voor de afspraak:</b><br>
+    <input type="date" name="datum" min="2022-12-31" max="2023-12-31"><br><br>
+    </fieldset><br>
+    <input type="submit" value="Verzend">
+    </form>
+</body>
+</html> 
